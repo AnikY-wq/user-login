@@ -1,0 +1,115 @@
+/* Global Styles */
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(201, 214, 226);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 4.5fr 2fr;
+    align-items: center;
+}
+
+
+/* photo css */
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Login Container */
+.item2 {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 600px; */
+    padding: 2em;
+    /* align-items: center; */
+}
+
+.welcome-msg {
+    margin: 2em 0em;
+}
+
+.welcome-msg h2 {
+    font-family: cursive;
+    font-size: xx-large;
+    color: rgb(20, 50, 40);
+}
+
+.welcome-msg p {
+    font-family: monospace;
+    margin: 0.5em 0;
+    font-size: large;
+    color: rgb(38, 93, 74);
+}
+
+/* Form */
+
+.input-field {
+    height: 3em;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+    padding: 0 1em;
+    margin: 1em 0em;
+}
+
+.input-field:focus {
+    outline: none;
+    /* color: green; */
+    border: none;
+    border: 3px solid rgb(27, 139, 213)
+}
+
+/* label */
+/* add css for label here */
+
+/* .form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+} */
+
+
+button {
+    margin: 0.8em 0;
+    font-family: sans-serif;
+}
+
+button.sign-in {
+    font-size: large;
+    padding: 0.5em 2em;
+    background: rgb(27, 139, 213)
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-container {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        max-width: 250px;
+    }
+}
